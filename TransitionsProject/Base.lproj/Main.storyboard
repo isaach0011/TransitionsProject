@@ -44,8 +44,20 @@
                     <view key="view" contentMode="scaleToFill" id="4gK-g0-ASN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bsod" translatesAutoresizingMaskIntoConstraints="NO" id="RGw-NN-Q5Q">
+                                <rect key="frame" x="180" y="110" width="240" height="128"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iqb-jc-i5E">
+                                <rect key="frame" x="180" y="350" width="240" height="128"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomImage" destination="Iqb-jc-i5E" id="kPJ-zp-wfG"/>
+                        <outlet property="topImage" destination="RGw-NN-Q5Q" id="MNe-qD-Ot2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iwx-Mq-U84" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -70,4 +82,7 @@
             <point key="canvasLocation" x="367" y="1193"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bsod" width="640" height="400"/>
+    </resources>
 </document>

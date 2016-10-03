@@ -10,5 +10,14 @@ import UIKit
 
 class UpdatedViewController : UIViewController
 {
+    @IBOutlet private var topImage: UIImageView!
+    @IBOutlet private var bottomImage: UIImageView!
     
+    override func viewDidLoad()
+    {
+        //Does the parent class version of the method first.
+        super.viewDidLoad()
+        //Then loads this classes components.
+        bottomImage.image = UIImage(named: "programming")
+    }
 }
